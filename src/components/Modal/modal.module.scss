@@ -1,0 +1,53 @@
+.modalContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($color: #000000, $alpha: 0.35);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal {
+    width: 40vw;
+    height: auto;
+    background-color: #fff;
+    padding: 1.4rem;
+    border-radius: 20px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+
+    &_header {
+      position: relative;
+      border-bottom: 1px solid #dddddd;
+      &-title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 800;
+      }
+
+      .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: transparent;
+        border: 0;
+        img {
+          width: 1rem;
+          height: auto;
+          transition: all 0.3s;
+        }
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    &_content {
+      padding: 2rem 0;
+    }
+  }
+}

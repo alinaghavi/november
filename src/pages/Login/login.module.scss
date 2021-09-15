@@ -1,0 +1,30 @@
+.login {
+  justify-content: center;
+}
+
+.form {
+  background-color: rgba(51, 51, 51, 0.7);
+  padding: 22px;
+  border-radius: 10px;
+}
+
+.fileds-wrapper {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+  display: block;
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.profile-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
